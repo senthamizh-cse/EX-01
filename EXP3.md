@@ -1,7 +1,7 @@
 # Ex.No: 3 To check the number is prime or not and inspect for failures.
  
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:30/08/2024                                                                         
+### REGISTER NUMBER : 212221040150
 ### AIM: 
 Write a python program to check the number is prime or not and inspect for failures.
  
@@ -17,22 +17,34 @@ Write a python program to check the number is prime or not and inspect for failu
 
 ### Program:
 
+```py
+num = input() 
+flag = 0 
 
+if num.isnumeric(): 
+    z = int(num) 
+    if z == 2: 
+        flag = 1 
+    elif z > 2: 
+        for i in range(2, z // 2):
+            if z % i == 0: 
+                flag = 0 
+                break 
+        else: 
+            flag = 1 
+            
+    if flag == 1: 
+        print("Prime Number") 
+    else: 
+        print("Not a Prime Number") 
+else: 
+    print("Enter a Positive Number")
 
-
-
-
-
-
-
-
-
-
+```
 
 ### Output:
 
-
-
+![Screenshot 2024-10-08 134729](https://github.com/user-attachments/assets/49499ed9-af44-429f-af17-1a7cafc07ed0)
 
 
 ### Result:
